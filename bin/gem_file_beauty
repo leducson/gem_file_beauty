@@ -1,5 +1,29 @@
 #!/usr/bin/env ruby
 
 require "gem_file_beauty"
+require "optparse"
 
-GemFileBeauty.process
+# GemFileBeauty.process
+
+
+options = {
+  :help => false,
+  :flag => false,
+  :mandatory => nil
+}
+
+optparse = OptionParser.new do|opts|
+  opts.on( '-h', '--help', 'Display help screen' ) do
+    options[:help] = true
+  end
+
+  opts.on( '-f', '--flag', 'Simple flag') do
+    options[:flag] = true
+  end
+
+  opts.on( '-m', '--mandatory', 'Mandatory argument') do |mandatory|
+    options[:mandatory] = mandatory
+  end
+end
+
+optparse.parse!
