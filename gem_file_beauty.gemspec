@@ -2,18 +2,18 @@ Gem::Specification.new do |spec|
   spec.name          = "gem_file_beauty"
   spec.version       = "0.1.9"
   spec.authors       = ["Le Duc Son"]
-  spec.email         = ["le.duc.son@sun-asterisk.com"]
+  spec.email         = ["ducson.aptech@gmail.com"]
 
   spec.summary       = "Gem file beautify code"
   spec.description   = "Gem file beautify code"
-  spec.homepage      = "https://github.com/sonld-1516/beautiful_gem"
+  spec.homepage      = "https://github.com/leducson/gem_file_beauty"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/sonld-1516/beautiful_gem"
+  spec.metadata["source_code_uri"] = "https://github.com/leducson/gem_file_beauty"
   spec.metadata["changelog_uri"] = "https://rubygems.org"
 
   # Specify which files should be added to the gem when it is released.
