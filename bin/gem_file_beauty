@@ -2,4 +2,4 @@
 
 require "gem_file_beauty"
 
-# GemFileBeauty.process
+GemFileBeauty.process
