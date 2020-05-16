@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-    $ gem install gem_file_beauty
+    $ gem_file_beauty
 
 ## Development
 
