@@ -2,7 +2,7 @@ Gem::Specification.new do |spec|
   spec.name          = "gem_file_beauty"
   spec.version       = "0.1.9"
   spec.authors       = ["Le Duc Son"]
-  spec.email         = ["ducson.aptech@gmail.com"]
+  spec.email         = ["le.duc.son@sun-asterisk.com"]
 
   spec.summary       = "Gem file beautify code"
   spec.description   = "Gem file beautify code"
