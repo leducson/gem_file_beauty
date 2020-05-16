@@ -1,6 +1,4 @@
-require "gem_file_beauty/version"
-
-class GemFileBeauty
+module GemFileBeauty
   def self.process
     current_project = `pwd`
     current_project = current_project.gsub(/\n/,"")

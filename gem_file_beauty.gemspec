@@ -1,21 +1,19 @@
-require_relative 'lib/gem_file_beauty/version'
-
 Gem::Specification.new do |spec|
   spec.name          = "gem_file_beauty"
-  spec.version       = GemFileBeauty::VERSION
+  spec.version       = "0.1.9"
   spec.authors       = ["Le Duc Son"]
   spec.email         = ["ducson.aptech@gmail.com"]
 
   spec.summary       = "Gem file beautify code"
   spec.description   = "Gem file beautify code"
-  spec.homepage      = "https://rubygems.org"
+  spec.homepage      = "https://github.com/sonld-1516/beautiful_gem"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "https://rubygems.com"
+  spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://rubygems.org"
+  spec.metadata["source_code_uri"] = "https://github.com/sonld-1516/beautiful_gem"
   spec.metadata["changelog_uri"] = "https://rubygems.org"
 
   # Specify which files should be added to the gem when it is released.
@@ -23,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = "bin"
+  spec.executables   = ["gem_file_beauty"]#spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 end
